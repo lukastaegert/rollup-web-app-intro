@@ -1,0 +1,16 @@
+{
+  "name": "rollup-intro",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "serve": "serve dist",
+    "serve-src": "serve src"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "serve": "^9.4.2"
+  }
+}
