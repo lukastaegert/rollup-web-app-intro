@@ -13,3 +13,7 @@
 ## Wrap bundle as IIFE
 
 * Use bundle without `type="module"` without leaking global variables
+
+## Create production bundle
+
+* `terser` is a modern JS compatible fork of the (unmaintained) uglify-es
