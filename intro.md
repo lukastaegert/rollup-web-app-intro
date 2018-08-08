@@ -9,3 +9,7 @@
 
 * `npx rollup -c` to create bundle
 * Run `npm run serve`, check developer console for network waterfall
+
+## Wrap bundle as IIFE
+
+* Use bundle without `type="module"` without leaking global variables
