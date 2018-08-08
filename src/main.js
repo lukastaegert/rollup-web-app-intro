@@ -7,6 +7,6 @@ const element = document.createElement('div');
 element.innerText = 'main';
 document.body.appendChild(element);
 
-ReactDom.render(<h1>Hussah, React!</h1>, element);
+ReactDom.render(<h1 className="main-element">Hussah, React!</h1>, element);
 
 log('Main is done!');
