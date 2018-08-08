@@ -25,3 +25,9 @@
 ## Add environment specific config
 
 * `rollup-plugin-alias` can route imports to different files. JSON files allow for nice tree-shaking optimizations
+
+## Add a frontend framework
+
+* `rollup-plugin-node-resolve` is needed to resolve imports from `node_modules`
+* `rollup-plugin-commonjs` is needed to parse commonJS files
+* `rollup-plugin-replace` can set `process.env.NODE_ENV` to the correct values
