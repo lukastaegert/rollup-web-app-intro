@@ -5,6 +5,16 @@
     <title>Bundled test</title>
 </head>
 <body>
-    <script src="bundle.js" type="module"></script>
+    <script>
+      try {
+        const loadBundle = new Function('import("./bundle.js")');
+        loadBundle();
+      } catch (err) {
+        const systemJsLoaderTag = document.createElement('script');
+        systemJsLoaderTag.src = 'https://unpkg.com/systemjs@0.21.4/dist/system-production.js';
+        systemJsLoaderTag.addEventListener('load', () => System.import('./nomodule/bundle.js'));
+        document.head.appendChild(systemJsLoaderTag);
+      }
+    </script>
 </body>
 </html>

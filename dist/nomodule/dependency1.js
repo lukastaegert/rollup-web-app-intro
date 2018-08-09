@@ -1,0 +1,1 @@
+System.register([],function(e,n){"use strict";return{execute:function(){const e=document.createElement("div");e.innerText="dependency 3",document.body.appendChild(e);const n=document.createElement("div");n.innerText="dependency 2",document.body.appendChild(n);const t=document.createElement("div");t.innerText="dependency 1",document.body.appendChild(t)}}});

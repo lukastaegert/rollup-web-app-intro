@@ -30,9 +30,14 @@ export default command => {
         'process.env.NODE_ENV': '"development"'
       })
     ]),
-    output: {
-      dir: 'dist',
-      format: 'esm'
-    }
+    output: [
+      {
+        dir: 'dist',
+        format: 'esm'
+      }, {
+        dir: 'dist/nomodule',
+        format: 'system'
+      }
+    ]
   });
 };

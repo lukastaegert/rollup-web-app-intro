@@ -37,3 +37,8 @@
 * needs `experimentalCodeSplitting` for now
 * no code duplication, no runtime
 * only works in modern browsers
+
+## Add fallback for older browsers
+
+* download e.g. SystemJS runtime
+* do feature detection
