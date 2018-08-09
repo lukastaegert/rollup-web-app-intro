@@ -11,7 +11,8 @@ export default command => {
   const isProduction = command.production;
   delete command.production;
   return ({
-    input: 'src/main.js',
+    input: {bundle: 'src/main.js'},
+    experimentalCodeSplitting: true,
     plugins: [
       json(),
       commonJs({include: 'node_modules/**'}),
@@ -30,8 +31,8 @@ export default command => {
       })
     ]),
     output: {
-      file: 'dist/bundle.js',
-      format: 'iife'
+      dir: 'dist',
+      format: 'esm'
     }
   });
 };

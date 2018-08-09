@@ -31,3 +31,9 @@
 * `rollup-plugin-node-resolve` is needed to resolve imports from `node_modules`
 * `rollup-plugin-commonjs` is needed to parse commonJS files
 * `rollup-plugin-replace` can set `process.env.NODE_ENV` to the correct values
+
+## Add ESM code-splitting
+
+* needs `experimentalCodeSplitting` for now
+* no code duplication, no runtime
+* only works in modern browsers
