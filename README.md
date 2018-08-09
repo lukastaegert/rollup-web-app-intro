@@ -17,3 +17,7 @@
 ## Create production bundle
 
 * `terser` is a modern JS compatible fork of the (unmaintained) uglify-es
+
+## Add CLI option for a production build
+
+* The CLI flags can be read and edited in the config file
