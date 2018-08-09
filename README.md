@@ -21,3 +21,7 @@
 ## Add CLI option for a production build
 
 * The CLI flags can be read and edited in the config file
+
+## Add environment specific config
+
+* `rollup-plugin-alias` can route imports to different files. JSON files allow for nice tree-shaking optimizations
